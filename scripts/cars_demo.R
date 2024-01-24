@@ -18,3 +18,7 @@ summary(mtcars)
 plot(mtcars$mpg, mtcars$hp)
 
 mpg_to_hp <- lm(mpg ~ hp, data=mtcars)
+
+plot(mtcars$mpg ~ mtcars$hp)
+
+abline(mpg_to_hp)
