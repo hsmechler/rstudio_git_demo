@@ -16,3 +16,5 @@ sport_cars<-mtcars %>%
 summary(mtcars)
 
 plot(mtcars$mpg, mtcars$hp)
+
+mpg_to_hp <- lm(mpg ~ hp, data=mtcars)
